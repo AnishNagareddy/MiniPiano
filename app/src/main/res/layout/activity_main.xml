@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/background"
+            android:background="@color/white"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/black"
+                android:id="@+id/topbar"
+                tools:ignore="MissingConstraints">
+
+            <TextView
+                    android:text="@string/csci310"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="@android:dimen/app_icon_size"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:textSize="24sp"
+                    android:id="@+id/CSCI310"
+                    tools:ignore="RtlHardcoded"/>
+
+            <TextView
+                    android:text="@string/anish_nagareddy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:layout_marginRight="@android:dimen/app_icon_size"
+                    android:ems="10"
+                    android:fontFamily="sans-serif"
+                    android:textSize="24sp"
+                    android:id="@+id/Anish"
+                    tools:ignore="RtlHardcoded"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/MiddleBackground"
+                android:layout_width="628dp"
+                android:layout_height="262dp"
+                android:background="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp">
+
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="215dp"
+                    android:id="@+id/button1"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_marginTop ="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="CSound"/>
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="215dp"
+                    android:id="@+id/button2"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_marginTop ="30dp"
+                    android:layout_marginLeft="107dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="DSound"
+                    />
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="215dp"
+                    android:id="@+id/button3"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_marginTop ="30dp"
+                    android:layout_marginLeft="194dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="ESound"
+                    />
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="215dp"
+                    android:id="@+id/button4"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_marginTop ="30dp"
+                    android:layout_marginLeft="281dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="FSound"
+                    />
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="215dp"
+                    android:id="@+id/button5"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_marginTop ="30dp"
+                    android:layout_marginLeft="368dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="GSound"
+                    />
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="215dp"
+                    android:id="@+id/button6"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_marginTop ="30dp"
+                    android:layout_marginLeft="455dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="ASound"
+                    />
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="215dp"
+                    android:id="@+id/button7"
+                    android:background="@drawable/roundedbutton"
+                    android:layout_marginTop ="30dp"
+                    android:layout_marginLeft="542dp"
+                    android:stateListAnimator="@null"
+                    android:onClick="BSound"
+                    />
+
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="63dp"
+                    android:id="@+id/button1.5"
+                    android:background="@drawable/roundedbuttonblack"
+                    android:stateListAnimator="@null"
+                    android:onClick="CSharpSound"
+                    />
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="152dp"
+                    android:id="@+id/button2.5"
+                    android:background="@drawable/roundedbuttonblack"
+                    android:stateListAnimator="@null"
+                    android:onClick="DSharpSound"
+                    />
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="325dp"
+                    android:id="@+id/button4.5"
+                    android:background="@drawable/roundedbuttonblack"
+                    android:stateListAnimator="@null"
+                    android:onClick="FSharpSound"
+                    />
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="411dp"
+                    android:id="@+id/button5.5"
+                    android:background="@drawable/roundedbuttonblack"
+                    android:stateListAnimator="@null"
+                    android:onClick="GSharpSound"
+                    />
+            <Button
+                    android:layout_width="70dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="498dp"
+                    android:id="@+id/button6.5"
+                    android:background="@drawable/roundedbuttonblack"
+                    android:stateListAnimator="@null"
+                    android:onClick="ASharpSound"
+                    />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
